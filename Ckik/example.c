@@ -1,5 +1,5 @@
-const char* Ckik_username = "procfd";
-const char* Ckik_password = "f1dl4L8J6n";
+const char* Ckik_username = "";
+const char* Ckik_password = "";
 
 #define CKIK_VERSION_11_1
 #include "Ckik/kik.h"
