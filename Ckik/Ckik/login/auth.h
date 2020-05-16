@@ -20,9 +20,7 @@ int Ckik_authenticate(Ckik_conn* conn, char* jid) {
 	fclose(idfile);
 
 	// complete jid with resource
-	strcpy(jid_w_resource, jid);
-	strcat(jid_w_resource, "/CAN"); // CAN means android, CIP means iPhone
-	strcat(jid_w_resource, device_id);
+	sprintf(jid_w_resource, "%s/CAN%s", jid, device_id); // CAN means android, CIP means iPhone
 
 	char* timestamp = kik_timestamp();
 	char* uuid = kik_uuid();
